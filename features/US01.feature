@@ -10,8 +10,8 @@ Scenario: Registro exitoso de usuario
     And la respuesta incluye un ID de usuario y detalles de la cuenta 
 
 Example:
-    | nombre de usuario | correo | contraseña | status | respuesta  
-    | Oliver Cruz | oliver@gmail.com | 12345678 | 201 | { "id": 1, "username": "Oliver Cruz", "email": "oliver@gmail.com "}
+    | nombre de usuario | correo | contraseña | status | respuesta |
+    | Oliver Cruz | oliver@gmail.com | 12345678 | 201 | { "id": 1, "username": "Oliver Cruz", "email": "oliver@gmail.com "} |
 
 Scenario: Registro con datos inválidos
     Given el endpoint "/api/v1/users/register" está disponible 
